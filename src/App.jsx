@@ -506,17 +506,6 @@ const CinematicGame = () => {
           </div>
         )}
 
-        {/* LOG MESSAGES */}
-        {gameState === 'playing' && (
-          <div className="absolute bottom-12 left-0 right-0 flex flex-col items-center pointer-events-none z-50">
-            {logs.map((log, idx) => (
-              <div key={idx} className={`text-lg tracking-wide transition-all duration-500 bg-black/60 px-6 py-2 rounded-full backdrop-blur-md mb-3 border border-white/10 ${idx === 0 ? 'text-[#D4AF37] opacity-100 translate-y-0' : 'text-white/40 opacity-50 translate-y-2 scale-95'}`}>
-                {log}
-              </div>
-            ))}
-          </div>
-        )}
-
       </div>
     </div>
   );
